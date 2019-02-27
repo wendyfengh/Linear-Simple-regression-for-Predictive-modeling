@@ -1,3 +1,5 @@
+#installing the packages needed to use it in the data set to plot and see important insights.
+
 install.packages('ggplot2')
 install.packages('GGally')
 install.packages('scatterplot3d')
@@ -27,6 +29,9 @@ ggplot(data = trees, aes(x = Girth, y = Volume)) + geom_point()  +
   ggtitle("Linear Regression Model Fitted to Data")
 
 
+# Predicting the possible volume of a tree given that its Girth it is established below, 
+#resulting in a approximate result to the real value. 
+predict(reg,data.frame(Girth =15.3))
+predict(reg,data.frame(Girth =20))
 
-predict(reg,data.frame(Girth =18.2))
 
